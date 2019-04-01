@@ -1,0 +1,20 @@
+@import './settings';
+
+.grid-container{
+  display: grid;
+  height: 200vh;
+  grid-template-areas:  "header header header"
+                        "content-one content-two content-two"
+                        "content-three content-three content-three"
+                        "footer footer footer";
+  grid-template-rows:    1fr 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header{ grid-area: header;}
+.content-one{ grid-area: content-one; }
+.content-two{ grid-area: content-two; }
+.content-three{ grid-area: content-three; }
+.footer{ grid-area: footer; }
+
+
