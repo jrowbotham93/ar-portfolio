@@ -6,7 +6,9 @@ nav {
   margin: 0;
   top: 0;
   background: $colour-purple;
-  color: #ccc;
+  color: black;
+  border-bottom: solid black 1px;
+
 }
 
 ul {
@@ -29,8 +31,8 @@ li {
 }
 
 li:hover {
-  border: solid black 5px;
-  transform: scale(1.2)
+  border-bottom: solid black 2px;
+  transform: scale(1.1)
 }
 
 .fixed-nav {
