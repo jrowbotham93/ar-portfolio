@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../styles/components/nav-bar.scss'
 
@@ -14,8 +15,8 @@ class NavigationBar extends React.Component{
     }
   
   componentDidMount() {
-        const el = document.querySelector('nav');
-        this.setState({top: el.offsetTop, height: el.offsetHeight});
+        const nav = document.getElementById('nav');
+        this.setState({top:nav.offsetTop, height:nav.offsetHeight});
         window.addEventListener('scroll', this.handleScroll);
     }
   
@@ -27,9 +28,9 @@ class NavigationBar extends React.Component{
   
   render() {
     return (
-      <nav className={this.state.scroll > this.state.top ? "fixed-nav" : ""}>
+      <nav id='nav' className={this.state.scroll > this.state.top ? "fixed-nav" : ""}>
         <ul>
-          <li>HOME</li>
+          <li><Link to='/'>HOME</Link></li>
           <li>ABOUT</li>
           <li>WORK</li>
           <li>CONTACT</li>
