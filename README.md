@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Basic Portfolio built with JS using React.js, Node.js
 
 ## Available Scripts
 
